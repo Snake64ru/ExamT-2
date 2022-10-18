@@ -1,4 +1,4 @@
-package Steps;
+package steps;
 
 import io.cucumber.java.ru.И;
 import io.cucumber.java.ru.Когда;
@@ -8,7 +8,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import static Utils.Configuration.getConfigurationValue;
+import static utils.Configuration.getConfigurationValue;
 import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
@@ -18,7 +18,7 @@ public class Morty {
     JSONObject episodeJson;
     JSONObject charJson;
     @Когда("Забираем информацию о Морти")
-    public void stringmorty() {
+    public void stringmorty(String id) {
         Response response = given()
                 .baseUri(getConfigurationValue("baseUri"))
                 .contentType(ContentType.JSON)

@@ -1,4 +1,4 @@
-package Steps;
+package steps;
 
 import io.cucumber.java.ru.И;
 import io.cucumber.java.ru.Когда;
@@ -10,8 +10,8 @@ import org.junit.jupiter.api.Assertions;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import static Hooks.ApiHooks.getJson;
-import static Utils.Configuration.getConfigurationValue;
+import static hooks.ApiHooks.getJson;
+import static utils.Configuration.getConfigurationValue;
 import static io.restassured.RestAssured.given;
 
 public class Tomato {
