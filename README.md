@@ -1,0 +1,1 @@
+Проект автотестов с использованием Cucumber, junit, maven, Rest Assured, allure
